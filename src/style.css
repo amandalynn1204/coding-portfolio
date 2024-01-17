@@ -19,8 +19,46 @@ h6 {
   line-height: 1.5;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: var(--background-color);
+  padding: 20px 40px;
+}
+
+nav p {
+  margin: 0;
+}
+
+nav p a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+nav .nav-links {
+  margin-top: 4px;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-left: 20px;
+  transition: all 150ms ease-in-out;
+}
+
+nav .nav-links a:hover {
+  color: var(--primary-color);
+}
+
+nav .nav-links a.active {
+  color: var(--primary-color);
+}
+
 header {
-  padding: 200px 20px;
+  padding: 160px 20px;
   text-align: center;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
@@ -104,6 +142,21 @@ footer p a:hover {
 }
 
 @media (max-width: 768px) {
+  nav {
+    display: block;
+    text-align: center;
+    padding: auto 10px;
+  }
+
+  nav p {
+    display: none;
+  }
+
+  nav .nav-links a {
+    margin: auto 10px;
+    font-size: 16px;
+  }
+
   header {
     padding: 80px 20px;
   }

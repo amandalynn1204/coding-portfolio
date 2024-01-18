@@ -83,6 +83,17 @@ main img {
   border: 4px solid white;
 }
 
+main a {
+  display: block;
+  color: var(--primary-color);
+  font-size: 18px;
+  margin: 18px 0 25px;
+}
+
+main a:hover {
+  color: var(--secondary-color);
+}
+
 footer {
   padding: 50px 20px;
   text-align: center;
@@ -141,6 +152,29 @@ footer p a:hover {
   background-size: cover;
   background-position: center;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+form label {
+  display: block;
+  font-size: 20px;
+}
+
+form input,
+form textarea {
+  display: block;
+  background-color: rgb(172, 180, 172);
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid gray;
+  border-radius: 14px;
+  margin: 12px 0;
 }
 
 .hero h1 {

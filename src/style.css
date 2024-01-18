@@ -67,6 +67,10 @@ main h2 {
 }
 
 main h3 {
+  font-size: 36px;
+}
+
+main h4 {
   font-size: 24px;
 }
 

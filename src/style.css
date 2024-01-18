@@ -37,26 +37,6 @@ nav p a {
   font-size: 24px;
 }
 
-nav .nav-links {
-  margin-top: 4px;
-}
-
-nav .nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  margin-left: 20px;
-  transition: all 150ms ease-in-out;
-}
-
-nav .nav-links a:hover {
-  color: var(--primary-color);
-}
-
-nav .nav-links a.active {
-  color: var(--primary-color);
-}
-
 main {
   color: white;
   padding: 50px 80px;
@@ -83,52 +63,9 @@ main img {
   border: 4px solid white;
 }
 
-main a {
-  display: block;
-  color: var(--primary-color);
-  font-size: 18px;
-  margin: 18px 0 25px;
-}
-
-main a:hover {
-  color: var(--secondary-color);
-}
-
 footer {
   padding: 50px 20px;
   text-align: center;
-}
-
-footer a.email-link {
-  text-decoration: none;
-  font-size: 28px;
-  color: white;
-  font-weight: 800;
-  transition: all 150ms ease-in-out;
-}
-
-footer a.email-link:hover {
-  color: var(--primary-color);
-}
-
-footer .social-links {
-  margin: 10px auto 50px;
-}
-
-footer .social-links a {
-  display: inline-block;
-  font-size: 28px;
-  color: var(--primary-color);
-  margin: 15px;
-  background-color: white;
-  padding: 4px 12px;
-  border-radius: 50px;
-  transition: all 150ms ease-in-out;
-}
-
-footer .social-links a:hover {
-  color: white;
-  background-color: var(--primary-color);
 }
 
 footer p {
@@ -141,17 +78,6 @@ footer p a {
 
 footer p a:hover {
   color: var(--secondary-color);
-}
-
-.hero {
-  padding: 160px 20px;
-  text-align: center;
-  color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
-    url(../images/forest-background.jpg);
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 form {
@@ -177,6 +103,17 @@ form textarea {
   margin: 12px 0;
 }
 
+.hero {
+  padding: 160px 20px;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
+    url(../images/forest-background.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
 .hero h1 {
   font-size: 80px;
 }
@@ -184,6 +121,69 @@ form textarea {
 .hero h2 {
   font-size: 28px;
   margin: 10px auto 40px;
+}
+
+.nav-links {
+  margin-top: 4px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-left: 20px;
+  transition: all 150ms ease-in-out;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.nav-links a.active {
+  color: var(--primary-color);
+}
+
+.email-link {
+  text-decoration: none;
+  font-size: 28px;
+  color: white;
+  font-weight: 800;
+  transition: all 150ms ease-in-out;
+}
+
+.email-link:hover {
+  color: var(--primary-color);
+}
+
+.social-links {
+  margin: 10px auto 50px;
+}
+
+.social-links a {
+  display: inline-block;
+  font-size: 28px;
+  color: var(--primary-color);
+  margin: 15px;
+  background-color: white;
+  padding: 4px 12px;
+  border-radius: 50px;
+  transition: all 150ms ease-in-out;
+}
+
+.social-links a:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.contact-links a {
+  display: block;
+  color: var(--primary-color);
+  font-size: 18px;
+  margin: 18px 0 25px;
+}
+
+.contact-links a:hover {
+  color: var(--secondary-color);
 }
 
 .primary-btn {
@@ -214,7 +214,7 @@ form textarea {
 }
 
 .secondary-btn:hover {
-  color: var(--background-color);
+  color: white;
   background-color: var(--primary-color);
 }
 
@@ -234,11 +234,6 @@ form textarea {
     display: none;
   }
 
-  nav .nav-links a {
-    margin: auto 10px;
-    font-size: 16px;
-  }
-
   main {
     padding: 50px 25px;
   }
@@ -254,5 +249,10 @@ form textarea {
   .hero h1 {
     margin-bottom: 30px;
     font-size: 64px;
+  }
+
+  .nav-links a {
+    margin: auto 10px;
+    font-size: 16px;
   }
 }

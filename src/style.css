@@ -255,4 +255,8 @@ form textarea {
     margin: auto 10px;
     font-size: 16px;
   }
+
+  .email-link {
+    font-size: 22px;
+  }
 }
